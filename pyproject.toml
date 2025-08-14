@@ -1,7 +1,7 @@
 [project]
 name = "captcha-fast-detector"
-version = "0.1.0"
-description = "A fast captcha recognition system for 5-character captchas"
+version = "0.2.0"
+description = "Step 1: ROI Calibrator for consistent-layout captchas"
 authors = [
     {name = "Captcha Fast Detector Team"}
 ]
@@ -9,16 +9,12 @@ readme = "README.md"
 requires-python = ">=3.8"
 dependencies = [
     "numpy>=1.21.0",
-    "opencv-python>=4.5.0",
     "pillow>=8.0.0",
-    "scikit-learn>=1.0.0",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "pytest>=6.0.0",
     "black>=22.0.0",
-    "flake8>=4.0.0",
 ]
 
 [build-system]
@@ -32,6 +28,6 @@ packages = ["captcha_detector"]
 line-length = 88
 target-version = ['py38']
 
-[tool.pytest.ini_options]
-testpaths = ["tests"]
-python_files = ["test_*.py"]
+#[tool.pytest.ini_options]
+#testpaths = ["tests"]
+#python_files = ["test_*.py"]
