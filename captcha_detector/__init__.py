@@ -1,11 +1,11 @@
 """
-ROI Calibrator (Step 1)
+Captcha Fast Detector package.
 
-This package currently provides the ROI calibration utility to learn and apply
-the fixed text region from a set of training captcha images.
+This package provides ROI calibration and character segmentation for captcha images.
 """
 
 from .roi_calibrator import ROICalibrator, ROIBounds
+from .character_segmenter import CharacterSegmenter
 
 __version__ = "0.2.0"
-__all__ = ["ROICalibrator", "ROIBounds"]
+__all__ = ["ROICalibrator", "ROIBounds", "CharacterSegmenter"]

@@ -15,6 +15,7 @@ dependencies = [
 [project.optional-dependencies]
 dev = [
     "black>=22.0.0",
+    "pytest>=7.0.0",
 ]
 
 [build-system]
@@ -28,6 +29,6 @@ packages = ["captcha_detector"]
 line-length = 88
 target-version = ['py38']
 
-#[tool.pytest.ini_options]
-#testpaths = ["tests"]
-#python_files = ["test_*.py"]
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

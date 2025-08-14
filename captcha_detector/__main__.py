@@ -5,6 +5,7 @@ This CLI supports:
 - Calibrate ROI from a directory of training images
 - Apply the learned ROI to crop a single image or a directory of images
 - Handle paired jpg+txt files
+- Segment ROI-cropped images into individual characters
 """
 
 import argparse
@@ -12,6 +13,7 @@ import sys
 from pathlib import Path
 
 from .roi_calibrator import ROICalibrator
+from .character_segmenter import CharacterSegmenter
 
 
 def main():
@@ -48,6 +50,11 @@ def main():
     p_batch.add_argument("--input-dir", "-i", required=True, help="Input directory of images")
     p_batch.add_argument("--output-dir", "-o", required=True, help="Output directory for cropped images")
     p_batch.add_argument("--paired", action="store_true", help="Process paired jpg+txt files")
+
+    # segment characters
+    p_segment = sub.add_parser("segment", help="Segment ROI-cropped images into individual characters")
+    p_segment.add_argument("--input-dir", "-i", required=True, help="Input directory with ROI-cropped jpg+txt files")
+    p_segment.add_argument("--output-dir", "-o", required=True, help="Output directory for segmented character files")
 
     args = parser.parse_args()
 
@@ -94,6 +101,11 @@ def main():
                         dst = out_dir / p.name
                         cal.crop_image_file(p, dst)
                 print(f"Cropped images saved to: {out_dir}")
+
+        elif args.command == "segment":
+            segmenter = CharacterSegmenter()
+            segmenter.segment_directory(args.input_dir, args.output_dir)
+            print(f"Character segmentation complete. Output saved to: {args.output_dir}")
 
     except (FileNotFoundError, ValueError) as e:
         print(f"Error: {e}", file=sys.stderr)

@@ -150,12 +150,6 @@ ehthumbs.db
 Desktop.ini
 
 # Project specific
-*.jpg
-*.png
-*.gif
-*.bmp
-*.tiff
-*.txt
 !requirements.txt
 !README.txt
 /.do_not_commit
