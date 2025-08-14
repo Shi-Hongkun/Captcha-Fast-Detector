@@ -30,13 +30,17 @@ class CharacterSegmenter:
     of equal width (with remainder pixels distributed) for further processing.
     """
     
-    def __init__(self, char_count: int = 5):
+    def __init__(self, char_count: int = 5, drop_remainder_left: bool = True):
         """Initialize the segmenter.
         
         Args:
             char_count: Number of characters to segment (default: 5 for captcha)
         """
         self.char_count = char_count
+        # When True, if width % char_count != 0, drop the leftmost `remainder` columns
+        # so that each segment has equal width floor(width/char_count).
+        # This implements the policy: "remove extra columns from left to right".
+        self.drop_remainder_left = drop_remainder_left
     
     def segment_chars(self, roi_array: np.ndarray) -> List[np.ndarray]:
         """Segment ROI array into individual character arrays.
@@ -57,24 +61,19 @@ class CharacterSegmenter:
         if width < self.char_count:
             raise ValueError(f"Width {width} must be >= char_count {self.char_count}")
         
-        char_width = width // self.char_count
+        base_width = width // self.char_count
         remainder = width % self.char_count
-        
-        # Distribute remainder pixels across first few characters
-        chars = []
-        current_x = 0
-        
+
+        # Optionally drop the leftmost remainder columns to enforce equal widths
+        left_offset = remainder if (self.drop_remainder_left and remainder > 0) else 0
+
+        chars: list[np.ndarray] = []
         for i in range(self.char_count):
-            # Add one extra pixel for first 'remainder' characters
-            extra_pixel = 1 if i < remainder else 0
-            char_width_actual = char_width + extra_pixel
-            
-            # Extract character region
-            char_array = roi_array[:, current_x:current_x + char_width_actual]
+            start_x = left_offset + i * base_width
+            end_x = start_x + base_width
+            char_array = roi_array[:, start_x:end_x]
             chars.append(char_array)
-            
-            current_x += char_width_actual
-        
+
         return chars
     
     def segment_5_chars(self, roi_array: np.ndarray) -> List[np.ndarray]:
@@ -177,8 +176,8 @@ class CharacterSegmenter:
         with open(input_path, 'r') as f:
             lines = f.readlines()
         
-        # Parse dimensions from first line
-        width, height = map(int, lines[0].strip().split())
+        # Parse dimensions from first line (height width format)
+        height, width = map(int, lines[0].strip().split())
         
         # Parse RGB values
         rgb_pixels = []
@@ -212,8 +211,8 @@ class CharacterSegmenter:
             # Save as txt file
             output_file = output_path / f"{base_name}_segment{i}.txt"
             with open(output_file, 'w') as f:
-                # Write new dimensions
-                f.write(f"{char_width} {char_height}\n")
+                # Write new dimensions (height width format)
+                f.write(f"{char_height} {char_width}\n")
                 
                 # Write RGB values row by row
                 for row in range(char_height):

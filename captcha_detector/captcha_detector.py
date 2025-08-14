@@ -292,8 +292,8 @@ class CaptchaDetector:
         with open(txt_path, 'r') as f:
             lines = f.readlines()
         
-        # Parse dimensions from first line
-        width, height = map(int, lines[0].strip().split())
+        # Parse dimensions from first line (height width format)
+        height, width = map(int, lines[0].strip().split())
         
         # Parse pixel values
         pixels = []

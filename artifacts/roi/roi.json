@@ -3,8 +3,5 @@
   "bottom": 22,
   "left": 4,
   "right": 50,
-  "expected_size": [
-    60,
-    30
-  ]
+  "expected_size": null
 }

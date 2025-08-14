@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 import json
 import numpy as np
+from collections import Counter
 
 
 class TemplateBuilder:
@@ -25,10 +26,10 @@ class TemplateBuilder:
         
         Args:
             char_dataset_dir: Directory containing organized character dataset
-            target_size: Target size for templates (width, height)
+            target_size: Target size (width, height) - consistent with txt format
         """
         self.char_dataset_dir = Path(char_dataset_dir)
-        self.target_size = target_size
+        self.target_size = target_size  # (width, height)
         
         if not self.char_dataset_dir.exists():
             raise ValueError(f"Character dataset directory does not exist: {char_dataset_dir}")
@@ -121,8 +122,8 @@ class TemplateBuilder:
         with open(txt_path, 'r') as f:
             lines = f.readlines()
         
-        # Parse dimensions from first line
-        width, height = map(int, lines[0].strip().split())
+        # Parse dimensions from first line (height width format)
+        height, width = map(int, lines[0].strip().split())
         
         # Parse RGB values
         rgb_pixels = []
@@ -155,39 +156,46 @@ class TemplateBuilder:
         else:
             gray_array = char_array
         
-        height, width = gray_array.shape
-        target_width, target_height = self.target_size
+        # Note: char_array is (height, width) from reshape(height, width)
+        current_height, current_width = gray_array.shape
+        target_width, target_height = self.target_size  # (width, height)
+        
+        # Calculate background color (use the most common pixel value)
+        pixel_counts = Counter(gray_array.flatten())
+        background_color = pixel_counts.most_common(1)[0][0]
         
         # Handle width padding/truncation
-        if width < target_width:
-            # Pad with zeros (black) on both sides
-            pad_left = (target_width - width) // 2
-            pad_right = target_width - width - pad_left
+        if current_width < target_width:
+            # Pad with background color on both sides (not zeros!)
+            pad_left = (target_width - current_width) // 2
+            pad_right = target_width - current_width - pad_left
             
-            padded = np.zeros((height, target_width), dtype=np.uint8)
-            padded[:, pad_left:pad_left + width] = gray_array
+            padded = np.full((current_height, target_width), background_color, dtype=np.uint8)
+            padded[:, pad_left:pad_left + current_width] = gray_array
             gray_array = padded
-        elif width > target_width:
+        elif current_width > target_width:
             # Truncate from center
-            start = (width - target_width) // 2
+            start = (current_width - target_width) // 2
             gray_array = gray_array[:, start:start + target_width]
         
         # Handle height (should already be correct from ROI calibration)
-        if height != target_height:
+        if current_height != target_height:
             # This shouldn't happen with our ROI calibration, but handle it
-            if height < target_height:
-                # Pad vertically
-                pad_top = (target_height - height) // 2
-                pad_bottom = target_height - height - pad_top
+            if current_height < target_height:
+                # Pad vertically with background color
+                pad_top = (target_height - current_height) // 2
+                pad_bottom = target_height - current_height - pad_top
                 
-                padded = np.zeros((target_height, target_width), dtype=np.uint8)
-                padded[pad_top:pad_top + height, :] = gray_array
+                padded = np.full((target_height, target_width), background_color, dtype=np.uint8)
+                padded[pad_top:pad_top + current_height, :] = gray_array
                 gray_array = padded
             else:
                 # Truncate vertically
-                start = (height - target_height) // 2
+                start = (current_height - target_height) // 2
                 gray_array = gray_array[start:start + target_height, :]
         
+        # Final shape should be (target_height, target_width)
+        assert gray_array.shape == (target_height, target_width), f"Expected ({target_height}, {target_width}), got {gray_array.shape}"
         return gray_array
     
     def _build_template_from_samples(self, samples: List[np.ndarray]) -> np.ndarray:
@@ -218,8 +226,8 @@ class TemplateBuilder:
         height, width = array.shape
         
         with open(output_path, 'w') as f:
-            # Write dimensions
-            f.write(f"{width} {height}\n")
+            # Write dimensions as height width (following original data format)
+            f.write(f"{height} {width}\n")
             
             # Write pixel values row by row
             for row in range(height):

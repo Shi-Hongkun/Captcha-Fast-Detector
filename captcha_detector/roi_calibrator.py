@@ -60,14 +60,12 @@ class ROICalibrator:
     3) Load bounds later and apply to new images
     """
 
-    def __init__(self, expected_size: Tuple[int, int] | None = (60, 30)) -> None:
-        """Initialize calibrator.
-
-        Args:
-            expected_size: Optional (width, height). If provided, images are
-                resized to this size for consistent stacking.
+    def __init__(self) -> None:
+        """Initialize ROI calibrator.
+        
+        The calibrator learns a fixed Region of Interest from training images
+        and can apply it to new images for consistent cropping.
         """
-        self.expected_size = expected_size
         self.roi_bounds: ROIBounds | None = None
 
     # ---------- Public API ----------
@@ -114,7 +112,7 @@ class ROICalibrator:
             "bottom": int(self.roi_bounds.bottom),
             "left": int(self.roi_bounds.left),
             "right": int(self.roi_bounds.right),
-            "expected_size": list(self.expected_size) if self.expected_size else None,
+            "expected_size": None, # No longer needed
         }
         Path(json_path).parent.mkdir(parents=True, exist_ok=True)
         with open(json_path, "w", encoding="utf-8") as f:
@@ -124,7 +122,6 @@ class ROICalibrator:
         """Load ROI bounds from a JSON file."""
         with open(json_path, "r", encoding="utf-8") as f:
             data = json.load(f)
-        self.expected_size = tuple(data.get("expected_size")) if data.get("expected_size") else self.expected_size
         self.roi_bounds = ROIBounds(
             top=int(data["top"]),
             bottom=int(data["bottom"]),
@@ -145,8 +142,6 @@ class ROICalibrator:
         if self.roi_bounds is None:
             raise ValueError("ROI is not calibrated. Call calibrate_* or load_bounds().")
         img = self._open_grayscale(input_path)
-        if self.expected_size is not None:
-            img = img.resize(self.expected_size, Image.Resampling.LANCZOS)
         arr = np.array(img, dtype=np.uint8)
         cropped = self.extract_roi_array(arr)
         out = Image.fromarray(cropped)
@@ -290,8 +285,6 @@ class ROICalibrator:
         arrays: List[np.ndarray] = []
         for path in paths:
             img = self._open_grayscale(path)
-            if self.expected_size is not None:
-                img = img.resize(self.expected_size, Image.Resampling.LANCZOS)
             arr = np.array(img, dtype=np.uint8)
             arrays.append(arr)
         stack = np.stack(arrays, axis=0)  # (N, H, W)
@@ -324,7 +317,7 @@ class ROICalibrator:
         """Load a txt file as RGB numpy array.
         
         Expected format:
-        First line: width height
+        First line: height width
         Remaining lines: pixels as "R,G,B R,G,B R,G,B ..." (RGB comma-separated, pixels space-separated)
         
         Returns:
@@ -333,8 +326,8 @@ class ROICalibrator:
         with open(txt_path, 'r') as f:
             lines = f.readlines()
         
-        # Parse dimensions from first line
-        width, height = map(int, lines[0].strip().split())
+        # Parse dimensions from first line (height width format)
+        height, width = map(int, lines[0].strip().split())
         
         # Parse RGB values from remaining lines
         rgb_pixels = []  # List to store [R,G,B] for each pixel
@@ -351,12 +344,15 @@ class ROICalibrator:
                         rgb_pixels.append([r, g, b])
         
         # Convert to numpy array
-        if len(rgb_pixels) != width * height:
-            raise ValueError(f"Expected {width * height} pixels, got {len(rgb_pixels)}")
+        if len(rgb_pixels) != height * width:
+            raise ValueError(f"Expected {height * width} pixels, got {len(rgb_pixels)}")
         
-        rgb_array = np.array(rgb_pixels, dtype=np.uint8)  # Shape: (width*height, 3)
+        rgb_array = np.array(rgb_pixels, dtype=np.uint8)  # Shape: (height*width, 3)
         
-        # Reshape to (height, width, 3)
+        # Reshape to (height, width, 3) - consistent with image processing convention
+        # This ensures the array has shape (height, width, 3) where:
+        # - First dimension (height) corresponds to rows (y-coordinate)
+        # - Second dimension (width) corresponds to columns (x-coordinate)
         img_array = rgb_array.reshape(height, width, 3)
         return img_array
 
@@ -381,8 +377,8 @@ class ROICalibrator:
         Path(output_path).parent.mkdir(parents=True, exist_ok=True)
         
         with open(output_path, 'w') as f:
-            # Write dimensions
-            f.write(f"{width} {height}\n")
+            # Write dimensions as height width (following original data format)
+            f.write(f"{height} {width}\n")
             
             # Write RGB values row by row
             # Format: pixels separated by spaces, RGB within pixel separated by commas
@@ -391,7 +387,7 @@ class ROICalibrator:
                 for col in range(width):
                     r, g, b = rgb_array[row, col]
                     row_pixels.append(f"{r},{g},{b}")
-                f.write(" ".join(row_pixels) + "\n")    
+                f.write(" ".join(row_pixels) + "\n")
 
     # ---------- Mathematical helpers ----------
     def _otsu_threshold_float(self, img: np.ndarray) -> float:

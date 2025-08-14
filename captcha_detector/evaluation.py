@@ -319,8 +319,8 @@ class EvaluationFramework:
         with open(txt_path, 'r') as f:
             lines = f.readlines()
         
-        # Parse dimensions from first line
-        width, height = map(int, lines[0].strip().split())
+        # Parse dimensions from first line (height width format)
+        height, width = map(int, lines[0].strip().split())
         
         # Parse pixel values
         pixels = []
@@ -348,8 +348,8 @@ class EvaluationFramework:
         height, width = array.shape
         
         with open(output_path, 'w') as f:
-            # Write dimensions
-            f.write(f"{width} {height}\n")
+            # Write dimensions as height width (following original data format)
+            f.write(f"{height} {width}\n")
             
             # Write pixel values row by row
             for row in range(height):
