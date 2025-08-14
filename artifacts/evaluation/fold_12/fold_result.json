@@ -1,0 +1,31 @@
+{
+  "fold_idx": 12,
+  "captcha_name": "output12.txt",
+  "ground_truth": "PQ9AE",
+  "prediction": "FQ9AE",
+  "correct": false,
+  "char_accuracy": 0.8,
+  "char_predictions": [
+    [
+      "F",
+      0.8031233835114063
+    ],
+    [
+      "Q",
+      0.985765790094544
+    ],
+    [
+      "9",
+      0.9882009544932182
+    ],
+    [
+      "A",
+      0.9918052745734042
+    ],
+    [
+      "E",
+      0.9896232477934427
+    ]
+  ],
+  "training_samples": 115
+}

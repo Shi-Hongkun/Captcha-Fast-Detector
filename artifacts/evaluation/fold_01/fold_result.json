@@ -1,0 +1,31 @@
+{
+  "fold_idx": 1,
+  "captcha_name": "output01.txt",
+  "ground_truth": "GRC35",
+  "prediction": "GRC35",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "G",
+      0.9853337983270871
+    ],
+    [
+      "R",
+      0.9941196295407674
+    ],
+    [
+      "C",
+      0.9744500237043878
+    ],
+    [
+      "3",
+      0.9527201672132295
+    ],
+    [
+      "5",
+      0.9674786530121341
+    ]
+  ],
+  "training_samples": 115
+}

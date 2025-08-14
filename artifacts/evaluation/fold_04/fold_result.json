@@ -1,0 +1,31 @@
+{
+  "fold_idx": 4,
+  "captcha_name": "output04.txt",
+  "ground_truth": "VLI2C",
+  "prediction": "VLI2C",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "V",
+      0.9783799313566878
+    ],
+    [
+      "L",
+      0.97192977572015
+    ],
+    [
+      "I",
+      0.9752553931193795
+    ],
+    [
+      "2",
+      0.9834900452010058
+    ],
+    [
+      "C",
+      0.9848539281173609
+    ]
+  ],
+  "training_samples": 115
+}

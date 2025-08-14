@@ -1,0 +1,31 @@
+{
+  "fold_idx": 6,
+  "captcha_name": "output06.txt",
+  "ground_truth": "OYTAD",
+  "prediction": "OYTAD",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "O",
+      0.9888264786635995
+    ],
+    [
+      "Y",
+      0.9710947377430619
+    ],
+    [
+      "T",
+      0.9786941129328249
+    ],
+    [
+      "A",
+      0.9920772353302808
+    ],
+    [
+      "D",
+      0.9723921551603285
+    ]
+  ],
+  "training_samples": 115
+}

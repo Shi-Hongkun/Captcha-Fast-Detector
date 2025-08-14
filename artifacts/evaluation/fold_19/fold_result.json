@@ -1,0 +1,31 @@
+{
+  "fold_idx": 19,
+  "captcha_name": "output19.txt",
+  "ground_truth": "5I8VE",
+  "prediction": "5I6VE",
+  "correct": false,
+  "char_accuracy": 0.8,
+  "char_predictions": [
+    [
+      "5",
+      0.9696882246780774
+    ],
+    [
+      "I",
+      0.9752553931193795
+    ],
+    [
+      "6",
+      0.7986759095997196
+    ],
+    [
+      "V",
+      0.9735615420121037
+    ],
+    [
+      "E",
+      0.9896232477934427
+    ]
+  ],
+  "training_samples": 115
+}

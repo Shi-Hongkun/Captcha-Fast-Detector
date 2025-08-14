@@ -1,0 +1,31 @@
+{
+  "fold_idx": 23,
+  "captcha_name": "output24.txt",
+  "ground_truth": "UHVFO",
+  "prediction": "UHVEO",
+  "correct": false,
+  "char_accuracy": 0.8,
+  "char_predictions": [
+    [
+      "U",
+      0.9559137384366274
+    ],
+    [
+      "H",
+      0.9891051365733953
+    ],
+    [
+      "V",
+      0.9855933856587143
+    ],
+    [
+      "E",
+      0.8470396980940991
+    ],
+    [
+      "O",
+      0.9769692617196287
+    ]
+  ],
+  "training_samples": 115
+}

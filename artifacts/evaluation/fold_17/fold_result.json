@@ -1,0 +1,31 @@
+{
+  "fold_idx": 17,
+  "captcha_name": "output17.txt",
+  "ground_truth": "20BHQ",
+  "prediction": "20BHQ",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "2",
+      0.9632029024215537
+    ],
+    [
+      "0",
+      0.9701875483786033
+    ],
+    [
+      "B",
+      0.9882285565895154
+    ],
+    [
+      "H",
+      0.9829568813428441
+    ],
+    [
+      "Q",
+      0.9841121301558505
+    ]
+  ],
+  "training_samples": 115
+}

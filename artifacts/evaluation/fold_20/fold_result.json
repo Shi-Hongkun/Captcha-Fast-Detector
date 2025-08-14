@@ -1,0 +1,31 @@
+{
+  "fold_idx": 20,
+  "captcha_name": "output20.txt",
+  "ground_truth": "Z97ME",
+  "prediction": "Z97ME",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "Z",
+      0.9875486198775247
+    ],
+    [
+      "9",
+      0.9906356218562554
+    ],
+    [
+      "7",
+      0.987088221440658
+    ],
+    [
+      "M",
+      0.9912192175246574
+    ],
+    [
+      "E",
+      0.9896232477934427
+    ]
+  ],
+  "training_samples": 115
+}

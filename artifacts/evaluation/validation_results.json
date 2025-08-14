@@ -1,0 +1,873 @@
+{
+  "validation_type": "leave_one_captcha_out",
+  "total_captchas": 24,
+  "folds": [
+    {
+      "fold_idx": 0,
+      "captcha_name": "output00.txt",
+      "ground_truth": "EGYK4",
+      "prediction": "EGYK4",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "E",
+          0.9675199250150646
+        ],
+        [
+          "G",
+          0.9931272804395831
+        ],
+        [
+          "Y",
+          0.9710947377430619
+        ],
+        [
+          "K",
+          0.9927273625587973
+        ],
+        [
+          "4",
+          0.9699710441588836
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 1,
+      "captcha_name": "output01.txt",
+      "ground_truth": "GRC35",
+      "prediction": "GRC35",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "G",
+          0.9853337983270871
+        ],
+        [
+          "R",
+          0.9941196295407674
+        ],
+        [
+          "C",
+          0.9744500237043878
+        ],
+        [
+          "3",
+          0.9527201672132295
+        ],
+        [
+          "5",
+          0.9674786530121341
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 2,
+      "captcha_name": "output02.txt",
+      "ground_truth": "6O5W1",
+      "prediction": "6O5W1",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "6",
+          0.9748611312923673
+        ],
+        [
+          "O",
+          0.9822433039270706
+        ],
+        [
+          "5",
+          0.9757020187012582
+        ],
+        [
+          "W",
+          0.9759642404204766
+        ],
+        [
+          "1",
+          0.9709585190929201
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 3,
+      "captcha_name": "output03.txt",
+      "ground_truth": "J627C",
+      "prediction": "J627C",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "J",
+          0.9835833444982314
+        ],
+        [
+          "6",
+          0.9748611312923673
+        ],
+        [
+          "2",
+          0.9916618899491879
+        ],
+        [
+          "7",
+          0.9894409423371847
+        ],
+        [
+          "C",
+          0.9848539281173609
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 4,
+      "captcha_name": "output04.txt",
+      "ground_truth": "VLI2C",
+      "prediction": "VLI2C",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "V",
+          0.9783799313566878
+        ],
+        [
+          "L",
+          0.97192977572015
+        ],
+        [
+          "I",
+          0.9752553931193795
+        ],
+        [
+          "2",
+          0.9834900452010058
+        ],
+        [
+          "C",
+          0.9848539281173609
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 5,
+      "captcha_name": "output05.txt",
+      "ground_truth": "O1R7Q",
+      "prediction": "O1R7Q",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "O",
+          0.9884660781171843
+        ],
+        [
+          "1",
+          0.9797682789418413
+        ],
+        [
+          "R",
+          0.981513054220241
+        ],
+        [
+          "7",
+          0.989573559300682
+        ],
+        [
+          "Q",
+          0.9841121301558505
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 6,
+      "captcha_name": "output06.txt",
+      "ground_truth": "OYTAD",
+      "prediction": "OYTAD",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "O",
+          0.9888264786635995
+        ],
+        [
+          "Y",
+          0.9710947377430619
+        ],
+        [
+          "T",
+          0.9786941129328249
+        ],
+        [
+          "A",
+          0.9920772353302808
+        ],
+        [
+          "D",
+          0.9723921551603285
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 7,
+      "captcha_name": "output07.txt",
+      "ground_truth": "ZRMQU",
+      "prediction": "ZRMQU",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "Z",
+          0.9887821468441722
+        ],
+        [
+          "R",
+          0.9939251649782828
+        ],
+        [
+          "M",
+          0.9966126000776883
+        ],
+        [
+          "Q",
+          0.9879766349882607
+        ],
+        [
+          "U",
+          0.9559137384366274
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 8,
+      "captcha_name": "output08.txt",
+      "ground_truth": "N9DQS",
+      "prediction": "M9DQS",
+      "correct": false,
+      "char_accuracy": 0.8,
+      "char_predictions": [
+        [
+          "M",
+          0.811457744810949
+        ],
+        [
+          "9",
+          0.9908776106202939
+        ],
+        [
+          "D",
+          0.993131886201257
+        ],
+        [
+          "Q",
+          0.9873479454824544
+        ],
+        [
+          "S",
+          0.9592677051684613
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 9,
+      "captcha_name": "output09.txt",
+      "ground_truth": "ZGJS3",
+      "prediction": "ZGJS3",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "Z",
+          0.9885945276426821
+        ],
+        [
+          "G",
+          0.9936503620276597
+        ],
+        [
+          "J",
+          0.9523308806968116
+        ],
+        [
+          "S",
+          0.9909062612748105
+        ],
+        [
+          "3",
+          0.9527201672132295
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 10,
+      "captcha_name": "output10.txt",
+      "ground_truth": "GZMBA",
+      "prediction": "GZMBA",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "G",
+          0.9869657545774788
+        ],
+        [
+          "Z",
+          0.9782017126764752
+        ],
+        [
+          "M",
+          0.9969082815920949
+        ],
+        [
+          "B",
+          0.9901502235897565
+        ],
+        [
+          "A",
+          0.9738639933341534
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 11,
+      "captcha_name": "output11.txt",
+      "ground_truth": "J14DM",
+      "prediction": "J14DM",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "J",
+          0.9859583902966893
+        ],
+        [
+          "1",
+          0.9792992312153487
+        ],
+        [
+          "4",
+          0.9699710441588836
+        ],
+        [
+          "D",
+          0.9936023246481422
+        ],
+        [
+          "M",
+          0.9766107388678231
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 12,
+      "captcha_name": "output12.txt",
+      "ground_truth": "PQ9AE",
+      "prediction": "FQ9AE",
+      "correct": false,
+      "char_accuracy": 0.8,
+      "char_predictions": [
+        [
+          "F",
+          0.8031233835114063
+        ],
+        [
+          "Q",
+          0.985765790094544
+        ],
+        [
+          "9",
+          0.9882009544932182
+        ],
+        [
+          "A",
+          0.9918052745734042
+        ],
+        [
+          "E",
+          0.9896232477934427
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 13,
+      "captcha_name": "output13.txt",
+      "ground_truth": "VWZDO",
+      "prediction": "VWZDO",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "V",
+          0.9783799313566878
+        ],
+        [
+          "W",
+          0.9897416877912135
+        ],
+        [
+          "Z",
+          0.9659153703301875
+        ],
+        [
+          "D",
+          0.9934443893695561
+        ],
+        [
+          "O",
+          0.9769692617196287
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 14,
+      "captcha_name": "output14.txt",
+      "ground_truth": "WGST7",
+      "prediction": "WGST7",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "W",
+          0.9881498658032994
+        ],
+        [
+          "G",
+          0.992416717108918
+        ],
+        [
+          "S",
+          0.9867564053626002
+        ],
+        [
+          "T",
+          0.9786941129328249
+        ],
+        [
+          "7",
+          0.9565326843456713
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 15,
+      "captcha_name": "output15.txt",
+      "ground_truth": "XKMS2",
+      "prediction": "XKMS2",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "X",
+          0.9537768983565436
+        ],
+        [
+          "K",
+          0.9711706056047544
+        ],
+        [
+          "M",
+          0.9968557780935536
+        ],
+        [
+          "S",
+          0.9904775240653872
+        ],
+        [
+          "2",
+          0.9658082416433702
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 16,
+      "captcha_name": "output16.txt",
+      "ground_truth": "1D2KB",
+      "prediction": "1D2KB",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "1",
+          0.9621808814315939
+        ],
+        [
+          "D",
+          0.988052792320851
+        ],
+        [
+          "2",
+          0.9911555823628132
+        ],
+        [
+          "K",
+          0.9928864919942324
+        ],
+        [
+          "B",
+          0.9751624379596334
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 17,
+      "captcha_name": "output17.txt",
+      "ground_truth": "20BHQ",
+      "prediction": "20BHQ",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "2",
+          0.9632029024215537
+        ],
+        [
+          "0",
+          0.9701875483786033
+        ],
+        [
+          "B",
+          0.9882285565895154
+        ],
+        [
+          "H",
+          0.9829568813428441
+        ],
+        [
+          "Q",
+          0.9841121301558505
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 18,
+      "captcha_name": "output18.txt",
+      "ground_truth": "OAH0V",
+      "prediction": "OAH0V",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "O",
+          0.9869456182585212
+        ],
+        [
+          "A",
+          0.9842331100728925
+        ],
+        [
+          "H",
+          0.9905137285819939
+        ],
+        [
+          "0",
+          0.9701875483786033
+        ],
+        [
+          "V",
+          0.9810383720294488
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 19,
+      "captcha_name": "output19.txt",
+      "ground_truth": "5I8VE",
+      "prediction": "5I6VE",
+      "correct": false,
+      "char_accuracy": 0.8,
+      "char_predictions": [
+        [
+          "5",
+          0.9696882246780774
+        ],
+        [
+          "I",
+          0.9752553931193795
+        ],
+        [
+          "6",
+          0.7986759095997196
+        ],
+        [
+          "V",
+          0.9735615420121037
+        ],
+        [
+          "E",
+          0.9896232477934427
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 20,
+      "captcha_name": "output20.txt",
+      "ground_truth": "Z97ME",
+      "prediction": "Z97ME",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "Z",
+          0.9875486198775247
+        ],
+        [
+          "9",
+          0.9906356218562554
+        ],
+        [
+          "7",
+          0.987088221440658
+        ],
+        [
+          "M",
+          0.9912192175246574
+        ],
+        [
+          "E",
+          0.9896232477934427
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 21,
+      "captcha_name": "output22.txt",
+      "ground_truth": "HCE91",
+      "prediction": "HCE91",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "H",
+          0.9722570416666363
+        ],
+        [
+          "C",
+          0.9760479578187411
+        ],
+        [
+          "E",
+          0.9758051787302816
+        ],
+        [
+          "9",
+          0.9833260250354968
+        ],
+        [
+          "1",
+          0.9709585190929201
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 22,
+      "captcha_name": "output23.txt",
+      "ground_truth": "WELXV",
+      "prediction": "WELXV",
+      "correct": true,
+      "char_accuracy": 1.0,
+      "char_predictions": [
+        [
+          "W",
+          0.992055373373378
+        ],
+        [
+          "E",
+          0.9800008216178572
+        ],
+        [
+          "L",
+          0.97192977572015
+        ],
+        [
+          "X",
+          0.9537768983565436
+        ],
+        [
+          "V",
+          0.9810383720294488
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 23,
+      "captcha_name": "output24.txt",
+      "ground_truth": "UHVFO",
+      "prediction": "UHVEO",
+      "correct": false,
+      "char_accuracy": 0.8,
+      "char_predictions": [
+        [
+          "U",
+          0.9559137384366274
+        ],
+        [
+          "H",
+          0.9891051365733953
+        ],
+        [
+          "V",
+          0.9855933856587143
+        ],
+        [
+          "E",
+          0.8470396980940991
+        ],
+        [
+          "O",
+          0.9769692617196287
+        ]
+      ],
+      "training_samples": 115
+    }
+  ],
+  "summary": {
+    "overall_accuracy": 0.8333333333333334,
+    "correct_captchas": 20,
+    "total_captchas": 24,
+    "average_character_accuracy": 0.9666666666666667,
+    "position_accuracies": [
+      0.9166666666666666,
+      1.0,
+      0.9583333333333334,
+      0.9583333333333334,
+      1.0
+    ],
+    "confusion_matrix": {
+      "E": {
+        "E": 6
+      },
+      "G": {
+        "G": 5
+      },
+      "Y": {
+        "Y": 2
+      },
+      "K": {
+        "K": 3
+      },
+      "4": {
+        "4": 2
+      },
+      "R": {
+        "R": 3
+      },
+      "C": {
+        "C": 4
+      },
+      "3": {
+        "3": 2
+      },
+      "5": {
+        "5": 3
+      },
+      "6": {
+        "6": 2
+      },
+      "O": {
+        "O": 6
+      },
+      "W": {
+        "W": 4
+      },
+      "1": {
+        "1": 5
+      },
+      "J": {
+        "J": 3
+      },
+      "2": {
+        "2": 5
+      },
+      "7": {
+        "7": 4
+      },
+      "V": {
+        "V": 6
+      },
+      "L": {
+        "L": 2
+      },
+      "I": {
+        "I": 2
+      },
+      "Q": {
+        "Q": 5
+      },
+      "T": {
+        "T": 2
+      },
+      "A": {
+        "A": 4
+      },
+      "D": {
+        "D": 5
+      },
+      "Z": {
+        "Z": 5
+      },
+      "M": {
+        "M": 5
+      },
+      "U": {
+        "U": 2
+      },
+      "N": {
+        "M": 1
+      },
+      "9": {
+        "9": 4
+      },
+      "S": {
+        "S": 4
+      },
+      "B": {
+        "B": 3
+      },
+      "P": {
+        "F": 1
+      },
+      "X": {
+        "X": 2
+      },
+      "0": {
+        "0": 2
+      },
+      "H": {
+        "H": 4
+      },
+      "8": {
+        "6": 1
+      },
+      "F": {
+        "E": 1
+      }
+    }
+  }
+}

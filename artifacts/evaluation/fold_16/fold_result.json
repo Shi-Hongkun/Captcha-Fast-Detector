@@ -1,0 +1,31 @@
+{
+  "fold_idx": 16,
+  "captcha_name": "output16.txt",
+  "ground_truth": "1D2KB",
+  "prediction": "1D2KB",
+  "correct": true,
+  "char_accuracy": 1.0,
+  "char_predictions": [
+    [
+      "1",
+      0.9621808814315939
+    ],
+    [
+      "D",
+      0.988052792320851
+    ],
+    [
+      "2",
+      0.9911555823628132
+    ],
+    [
+      "K",
+      0.9928864919942324
+    ],
+    [
+      "B",
+      0.9751624379596334
+    ]
+  ],
+  "training_samples": 115
+}
