@@ -1,0 +1,31 @@
+{
+  "fold_idx": 13,
+  "captcha_name": "output13.txt",
+  "ground_truth": "VWZDO",
+  "prediction": "PR8FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9580058576776057
+    ],
+    [
+      "R",
+      0.988893817771442
+    ],
+    [
+      "8",
+      0.9979492004124162
+    ],
+    [
+      "F",
+      0.9989897397711418
+    ],
+    [
+      "E",
+      0.9921397412046691
+    ]
+  ],
+  "training_samples": 115
+}

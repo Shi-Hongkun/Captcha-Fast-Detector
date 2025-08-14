@@ -1,0 +1,31 @@
+{
+  "fold_idx": 3,
+  "captcha_name": "output03.txt",
+  "ground_truth": "J627C",
+  "prediction": "NR8FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9718638539190378
+    ],
+    [
+      "R",
+      0.9886370441307876
+    ],
+    [
+      "8",
+      0.9966363155390221
+    ],
+    [
+      "F",
+      0.9987497224232174
+    ],
+    [
+      "E",
+      0.9917952235528776
+    ]
+  ],
+  "training_samples": 115
+}

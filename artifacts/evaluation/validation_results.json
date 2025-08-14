@@ -1,0 +1,935 @@
+{
+  "validation_type": "leave_one_captcha_out",
+  "total_captchas": 24,
+  "folds": [
+    {
+      "fold_idx": 0,
+      "captcha_name": "output00.txt",
+      "ground_truth": "EGYK4",
+      "prediction": "PY4FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9826067742769914
+        ],
+        [
+          "Y",
+          0.9971730430137138
+        ],
+        [
+          "4",
+          0.9982374929894557
+        ],
+        [
+          "F",
+          0.9990014513448789
+        ],
+        [
+          "E",
+          0.991985897296581
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 1,
+      "captcha_name": "output01.txt",
+      "ground_truth": "GRC35",
+      "prediction": "NG8F3",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9594994489347849
+        ],
+        [
+          "G",
+          0.995118363892002
+        ],
+        [
+          "8",
+          0.9987968126455521
+        ],
+        [
+          "F",
+          0.9987030219428364
+        ],
+        [
+          "3",
+          0.9986052974238444
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 2,
+      "captcha_name": "output02.txt",
+      "ground_truth": "6O5W1",
+      "prediction": "P68FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9496991420714418
+        ],
+        [
+          "6",
+          0.9972872188798299
+        ],
+        [
+          "8",
+          0.9980998292873563
+        ],
+        [
+          "F",
+          0.9988329311534362
+        ],
+        [
+          "E",
+          0.9914254395071004
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 3,
+      "captcha_name": "output03.txt",
+      "ground_truth": "J627C",
+      "prediction": "NR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9718638539190378
+        ],
+        [
+          "R",
+          0.9886370441307876
+        ],
+        [
+          "8",
+          0.9966363155390221
+        ],
+        [
+          "F",
+          0.9987497224232174
+        ],
+        [
+          "E",
+          0.9917952235528776
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 4,
+      "captcha_name": "output04.txt",
+      "ground_truth": "VLI2C",
+      "prediction": "PILFE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9640722248247962
+        ],
+        [
+          "I",
+          0.9977220139685917
+        ],
+        [
+          "L",
+          0.9985421876656152
+        ],
+        [
+          "F",
+          0.9991363641529004
+        ],
+        [
+          "E",
+          0.992432804071153
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 5,
+      "captcha_name": "output05.txt",
+      "ground_truth": "O1R7Q",
+      "prediction": "PR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9604857687985667
+        ],
+        [
+          "R",
+          0.9960332918008254
+        ],
+        [
+          "8",
+          0.9982452951606655
+        ],
+        [
+          "F",
+          0.9994871218198624
+        ],
+        [
+          "E",
+          0.9915291795522422
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 6,
+      "captcha_name": "output06.txt",
+      "ground_truth": "OYTAD",
+      "prediction": "PR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9825478981980326
+        ],
+        [
+          "R",
+          0.9882110695580597
+        ],
+        [
+          "8",
+          0.9967670469743376
+        ],
+        [
+          "F",
+          0.9994574486974005
+        ],
+        [
+          "E",
+          0.992009773948962
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 7,
+      "captcha_name": "output07.txt",
+      "ground_truth": "ZRMQU",
+      "prediction": "N98FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9751840313108606
+        ],
+        [
+          "9",
+          0.9854658588111431
+        ],
+        [
+          "8",
+          0.9984466014799872
+        ],
+        [
+          "F",
+          0.9977612103980658
+        ],
+        [
+          "E",
+          0.9912249748021371
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 8,
+      "captcha_name": "output08.txt",
+      "ground_truth": "N9DQS",
+      "prediction": "PR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9605243472947252
+        ],
+        [
+          "R",
+          0.9901122856070772
+        ],
+        [
+          "8",
+          0.9986572425058701
+        ],
+        [
+          "F",
+          0.9989146751935412
+        ],
+        [
+          "E",
+          0.9916908365424576
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 9,
+      "captcha_name": "output09.txt",
+      "ground_truth": "ZGJS3",
+      "prediction": "NR83E",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9660454605786405
+        ],
+        [
+          "R",
+          0.989902829880437
+        ],
+        [
+          "8",
+          0.9976204823315191
+        ],
+        [
+          "3",
+          0.9984436416383141
+        ],
+        [
+          "E",
+          0.991935525896217
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 10,
+      "captcha_name": "output10.txt",
+      "ground_truth": "GZMBA",
+      "prediction": "PG8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9600965133428307
+        ],
+        [
+          "G",
+          0.9962950735325655
+        ],
+        [
+          "8",
+          0.9965216114682741
+        ],
+        [
+          "F",
+          0.9990365905871202
+        ],
+        [
+          "E",
+          0.991165496697038
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 11,
+      "captcha_name": "output11.txt",
+      "ground_truth": "J14DM",
+      "prediction": "PR8F4",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9462847726144823
+        ],
+        [
+          "R",
+          0.9901759664471638
+        ],
+        [
+          "8",
+          0.9981631768004343
+        ],
+        [
+          "F",
+          0.9991746599521092
+        ],
+        [
+          "4",
+          0.996056083612029
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 12,
+      "captcha_name": "output12.txt",
+      "ground_truth": "PQ9AE",
+      "prediction": "N98FC",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9605243472947252
+        ],
+        [
+          "9",
+          0.990628085113057
+        ],
+        [
+          "8",
+          0.9988329794311659
+        ],
+        [
+          "F",
+          0.9987323572672017
+        ],
+        [
+          "C",
+          0.987516963992562
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 13,
+      "captcha_name": "output13.txt",
+      "ground_truth": "VWZDO",
+      "prediction": "PR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9580058576776057
+        ],
+        [
+          "R",
+          0.988893817771442
+        ],
+        [
+          "8",
+          0.9979492004124162
+        ],
+        [
+          "F",
+          0.9989897397711418
+        ],
+        [
+          "E",
+          0.9921397412046691
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 14,
+      "captcha_name": "output14.txt",
+      "ground_truth": "WGST7",
+      "prediction": "PRTFE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9581460912692001
+        ],
+        [
+          "R",
+          0.9884653958753654
+        ],
+        [
+          "T",
+          0.9979102073885934
+        ],
+        [
+          "F",
+          0.9979025184281648
+        ],
+        [
+          "E",
+          0.9917021622443538
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 15,
+      "captcha_name": "output15.txt",
+      "ground_truth": "XKMS2",
+      "prediction": "PR8KE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9415056316617143
+        ],
+        [
+          "R",
+          0.9893213710488549
+        ],
+        [
+          "8",
+          0.9965100046395351
+        ],
+        [
+          "K",
+          0.9987422677863513
+        ],
+        [
+          "E",
+          0.9912052420566543
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 16,
+      "captcha_name": "output16.txt",
+      "ground_truth": "1D2KB",
+      "prediction": "NR8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9596420728240146
+        ],
+        [
+          "R",
+          0.988733149185285
+        ],
+        [
+          "8",
+          0.9986494398202702
+        ],
+        [
+          "F",
+          0.9985480447938031
+        ],
+        [
+          "E",
+          0.9917301948680073
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 17,
+      "captcha_name": "output17.txt",
+      "ground_truth": "20BHQ",
+      "prediction": "PR80E",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9615708262376413
+        ],
+        [
+          "R",
+          0.9883481829856802
+        ],
+        [
+          "8",
+          0.9970777252688107
+        ],
+        [
+          "0",
+          0.9991532700098422
+        ],
+        [
+          "E",
+          0.9917471724625491
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 18,
+      "captcha_name": "output18.txt",
+      "ground_truth": "OAH0V",
+      "prediction": "P08FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9839922605384421
+        ],
+        [
+          "0",
+          0.9953843442462982
+        ],
+        [
+          "8",
+          0.9973367267923972
+        ],
+        [
+          "F",
+          0.9975318075563525
+        ],
+        [
+          "E",
+          0.992295044103951
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 19,
+      "captcha_name": "output19.txt",
+      "ground_truth": "5I8VE",
+      "prediction": "PRIFC",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9660735961025241
+        ],
+        [
+          "R",
+          0.9886159202837355
+        ],
+        [
+          "I",
+          0.9980276812122759
+        ],
+        [
+          "F",
+          0.9986347667098365
+        ],
+        [
+          "C",
+          0.9882126073871735
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 20,
+      "captcha_name": "output20.txt",
+      "ground_truth": "Z97ME",
+      "prediction": "NR8FC",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9613270064612149
+        ],
+        [
+          "R",
+          0.9889830477372048
+        ],
+        [
+          "8",
+          0.9983144291593742
+        ],
+        [
+          "F",
+          0.9991299369869877
+        ],
+        [
+          "C",
+          0.9888021349176725
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 21,
+      "captcha_name": "output22.txt",
+      "ground_truth": "HCE91",
+      "prediction": "P98FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.9661528606720319
+        ],
+        [
+          "9",
+          0.9906572954320368
+        ],
+        [
+          "8",
+          0.9982164138297165
+        ],
+        [
+          "F",
+          0.9983869909166498
+        ],
+        [
+          "E",
+          0.99303522583372
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 22,
+      "captcha_name": "output23.txt",
+      "ground_truth": "WELXV",
+      "prediction": "NL8FE",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "N",
+          0.9428672769984217
+        ],
+        [
+          "L",
+          0.9971469952093338
+        ],
+        [
+          "8",
+          0.9981759874131374
+        ],
+        [
+          "F",
+          0.997468031225749
+        ],
+        [
+          "E",
+          0.9952639835157571
+        ]
+      ],
+      "training_samples": 115
+    },
+    {
+      "fold_idx": 23,
+      "captcha_name": "output24.txt",
+      "ground_truth": "UHVFO",
+      "prediction": "PR8KU",
+      "correct": false,
+      "char_accuracy": 0.0,
+      "char_predictions": [
+        [
+          "P",
+          0.951018284174597
+        ],
+        [
+          "R",
+          0.9881212338687241
+        ],
+        [
+          "8",
+          0.9984268400838705
+        ],
+        [
+          "K",
+          0.9906176566549086
+        ],
+        [
+          "U",
+          0.9989133610426143
+        ]
+      ],
+      "training_samples": 115
+    }
+  ],
+  "summary": {
+    "overall_accuracy": 0.0,
+    "correct_captchas": 0,
+    "total_captchas": 24,
+    "average_character_accuracy": 0.0,
+    "position_accuracies": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "confusion_matrix": {
+      "E": {
+        "P": 1,
+        "C": 3,
+        "8": 1,
+        "L": 1
+      },
+      "G": {
+        "Y": 1,
+        "N": 1,
+        "R": 2,
+        "P": 1
+      },
+      "Y": {
+        "4": 1,
+        "R": 1
+      },
+      "K": {
+        "F": 2,
+        "R": 1
+      },
+      "4": {
+        "E": 1,
+        "8": 1
+      },
+      "R": {
+        "G": 1,
+        "8": 1,
+        "9": 1
+      },
+      "C": {
+        "8": 1,
+        "E": 2,
+        "9": 1
+      },
+      "3": {
+        "F": 1,
+        "E": 1
+      },
+      "5": {
+        "3": 1,
+        "8": 1,
+        "P": 1
+      },
+      "6": {
+        "P": 1,
+        "R": 1
+      },
+      "O": {
+        "6": 1,
+        "P": 3,
+        "E": 1,
+        "U": 1
+      },
+      "W": {
+        "F": 1,
+        "R": 1,
+        "P": 1,
+        "N": 1
+      },
+      "1": {
+        "E": 2,
+        "R": 2,
+        "N": 1
+      },
+      "J": {
+        "N": 1,
+        "8": 1,
+        "P": 1
+      },
+      "2": {
+        "8": 2,
+        "F": 1,
+        "E": 1,
+        "P": 1
+      },
+      "7": {
+        "F": 2,
+        "E": 1,
+        "8": 1
+      },
+      "V": {
+        "P": 2,
+        "E": 2,
+        "F": 1,
+        "8": 1
+      },
+      "L": {
+        "I": 1,
+        "8": 1
+      },
+      "I": {
+        "L": 1,
+        "R": 1
+      },
+      "Q": {
+        "E": 2,
+        "F": 2,
+        "9": 1
+      },
+      "T": {
+        "8": 1,
+        "F": 1
+      },
+      "A": {
+        "F": 2,
+        "E": 1,
+        "0": 1
+      },
+      "D": {
+        "E": 1,
+        "8": 1,
+        "F": 2,
+        "R": 1
+      },
+      "Z": {
+        "N": 3,
+        "G": 1,
+        "8": 1
+      },
+      "M": {
+        "8": 3,
+        "4": 1,
+        "F": 1
+      },
+      "U": {
+        "E": 1,
+        "P": 1
+      },
+      "N": {
+        "P": 1
+      },
+      "9": {
+        "R": 2,
+        "8": 1,
+        "F": 1
+      },
+      "S": {
+        "E": 1,
+        "3": 1,
+        "T": 1,
+        "K": 1
+      },
+      "B": {
+        "F": 1,
+        "E": 1,
+        "8": 1
+      },
+      "P": {
+        "N": 1
+      },
+      "X": {
+        "P": 1,
+        "F": 1
+      },
+      "0": {
+        "R": 1,
+        "F": 1
+      },
+      "H": {
+        "0": 1,
+        "8": 1,
+        "P": 1,
+        "R": 1
+      },
+      "8": {
+        "I": 1
+      },
+      "F": {
+        "K": 1
+      }
+    }
+  }
+}

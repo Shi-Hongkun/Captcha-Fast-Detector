@@ -1,0 +1,31 @@
+{
+  "fold_idx": 23,
+  "captcha_name": "output24.txt",
+  "ground_truth": "UHVFO",
+  "prediction": "PR8KU",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.951018284174597
+    ],
+    [
+      "R",
+      0.9881212338687241
+    ],
+    [
+      "8",
+      0.9984268400838705
+    ],
+    [
+      "K",
+      0.9906176566549086
+    ],
+    [
+      "U",
+      0.9989133610426143
+    ]
+  ],
+  "training_samples": 115
+}

@@ -1,0 +1,31 @@
+{
+  "fold_idx": 17,
+  "captcha_name": "output17.txt",
+  "ground_truth": "20BHQ",
+  "prediction": "PR80E",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9615708262376413
+    ],
+    [
+      "R",
+      0.9883481829856802
+    ],
+    [
+      "8",
+      0.9970777252688107
+    ],
+    [
+      "0",
+      0.9991532700098422
+    ],
+    [
+      "E",
+      0.9917471724625491
+    ]
+  ],
+  "training_samples": 115
+}

@@ -1,0 +1,31 @@
+{
+  "fold_idx": 9,
+  "captcha_name": "output09.txt",
+  "ground_truth": "ZGJS3",
+  "prediction": "NR83E",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9660454605786405
+    ],
+    [
+      "R",
+      0.989902829880437
+    ],
+    [
+      "8",
+      0.9976204823315191
+    ],
+    [
+      "3",
+      0.9984436416383141
+    ],
+    [
+      "E",
+      0.991935525896217
+    ]
+  ],
+  "training_samples": 115
+}

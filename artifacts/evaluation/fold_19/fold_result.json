@@ -1,0 +1,31 @@
+{
+  "fold_idx": 19,
+  "captcha_name": "output19.txt",
+  "ground_truth": "5I8VE",
+  "prediction": "PRIFC",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9660735961025241
+    ],
+    [
+      "R",
+      0.9886159202837355
+    ],
+    [
+      "I",
+      0.9980276812122759
+    ],
+    [
+      "F",
+      0.9986347667098365
+    ],
+    [
+      "C",
+      0.9882126073871735
+    ]
+  ],
+  "training_samples": 115
+}

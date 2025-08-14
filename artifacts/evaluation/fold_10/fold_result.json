@@ -1,0 +1,31 @@
+{
+  "fold_idx": 10,
+  "captcha_name": "output10.txt",
+  "ground_truth": "GZMBA",
+  "prediction": "PG8FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9600965133428307
+    ],
+    [
+      "G",
+      0.9962950735325655
+    ],
+    [
+      "8",
+      0.9965216114682741
+    ],
+    [
+      "F",
+      0.9990365905871202
+    ],
+    [
+      "E",
+      0.991165496697038
+    ]
+  ],
+  "training_samples": 115
+}

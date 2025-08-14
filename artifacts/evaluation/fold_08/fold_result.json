@@ -1,0 +1,31 @@
+{
+  "fold_idx": 8,
+  "captcha_name": "output08.txt",
+  "ground_truth": "N9DQS",
+  "prediction": "PR8FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9605243472947252
+    ],
+    [
+      "R",
+      0.9901122856070772
+    ],
+    [
+      "8",
+      0.9986572425058701
+    ],
+    [
+      "F",
+      0.9989146751935412
+    ],
+    [
+      "E",
+      0.9916908365424576
+    ]
+  ],
+  "training_samples": 115
+}

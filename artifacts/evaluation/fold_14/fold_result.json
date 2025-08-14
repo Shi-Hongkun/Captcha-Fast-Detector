@@ -1,0 +1,31 @@
+{
+  "fold_idx": 14,
+  "captcha_name": "output14.txt",
+  "ground_truth": "WGST7",
+  "prediction": "PRTFE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9581460912692001
+    ],
+    [
+      "R",
+      0.9884653958753654
+    ],
+    [
+      "T",
+      0.9979102073885934
+    ],
+    [
+      "F",
+      0.9979025184281648
+    ],
+    [
+      "E",
+      0.9917021622443538
+    ]
+  ],
+  "training_samples": 115
+}

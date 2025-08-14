@@ -1,0 +1,31 @@
+{
+  "fold_idx": 20,
+  "captcha_name": "output20.txt",
+  "ground_truth": "Z97ME",
+  "prediction": "NR8FC",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9613270064612149
+    ],
+    [
+      "R",
+      0.9889830477372048
+    ],
+    [
+      "8",
+      0.9983144291593742
+    ],
+    [
+      "F",
+      0.9991299369869877
+    ],
+    [
+      "C",
+      0.9888021349176725
+    ]
+  ],
+  "training_samples": 115
+}

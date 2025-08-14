@@ -1,0 +1,31 @@
+{
+  "fold_idx": 2,
+  "captcha_name": "output02.txt",
+  "ground_truth": "6O5W1",
+  "prediction": "P68FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9496991420714418
+    ],
+    [
+      "6",
+      0.9972872188798299
+    ],
+    [
+      "8",
+      0.9980998292873563
+    ],
+    [
+      "F",
+      0.9988329311534362
+    ],
+    [
+      "E",
+      0.9914254395071004
+    ]
+  ],
+  "training_samples": 115
+}

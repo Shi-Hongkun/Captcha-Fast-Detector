@@ -1,0 +1,31 @@
+{
+  "fold_idx": 4,
+  "captcha_name": "output04.txt",
+  "ground_truth": "VLI2C",
+  "prediction": "PILFE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9640722248247962
+    ],
+    [
+      "I",
+      0.9977220139685917
+    ],
+    [
+      "L",
+      0.9985421876656152
+    ],
+    [
+      "F",
+      0.9991363641529004
+    ],
+    [
+      "E",
+      0.992432804071153
+    ]
+  ],
+  "training_samples": 115
+}

@@ -1,0 +1,31 @@
+{
+  "fold_idx": 18,
+  "captcha_name": "output18.txt",
+  "ground_truth": "OAH0V",
+  "prediction": "P08FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9839922605384421
+    ],
+    [
+      "0",
+      0.9953843442462982
+    ],
+    [
+      "8",
+      0.9973367267923972
+    ],
+    [
+      "F",
+      0.9975318075563525
+    ],
+    [
+      "E",
+      0.992295044103951
+    ]
+  ],
+  "training_samples": 115
+}

@@ -1,0 +1,31 @@
+{
+  "fold_idx": 1,
+  "captcha_name": "output01.txt",
+  "ground_truth": "GRC35",
+  "prediction": "NG8F3",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9594994489347849
+    ],
+    [
+      "G",
+      0.995118363892002
+    ],
+    [
+      "8",
+      0.9987968126455521
+    ],
+    [
+      "F",
+      0.9987030219428364
+    ],
+    [
+      "3",
+      0.9986052974238444
+    ]
+  ],
+  "training_samples": 115
+}

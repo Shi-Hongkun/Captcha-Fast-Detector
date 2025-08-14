@@ -1,0 +1,31 @@
+{
+  "fold_idx": 0,
+  "captcha_name": "output00.txt",
+  "ground_truth": "EGYK4",
+  "prediction": "PY4FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9826067742769914
+    ],
+    [
+      "Y",
+      0.9971730430137138
+    ],
+    [
+      "4",
+      0.9982374929894557
+    ],
+    [
+      "F",
+      0.9990014513448789
+    ],
+    [
+      "E",
+      0.991985897296581
+    ]
+  ],
+  "training_samples": 115
+}

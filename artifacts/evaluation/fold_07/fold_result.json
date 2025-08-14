@@ -1,0 +1,31 @@
+{
+  "fold_idx": 7,
+  "captcha_name": "output07.txt",
+  "ground_truth": "ZRMQU",
+  "prediction": "N98FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9751840313108606
+    ],
+    [
+      "9",
+      0.9854658588111431
+    ],
+    [
+      "8",
+      0.9984466014799872
+    ],
+    [
+      "F",
+      0.9977612103980658
+    ],
+    [
+      "E",
+      0.9912249748021371
+    ]
+  ],
+  "training_samples": 115
+}

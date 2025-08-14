@@ -1,0 +1,31 @@
+{
+  "fold_idx": 11,
+  "captcha_name": "output11.txt",
+  "ground_truth": "J14DM",
+  "prediction": "PR8F4",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9462847726144823
+    ],
+    [
+      "R",
+      0.9901759664471638
+    ],
+    [
+      "8",
+      0.9981631768004343
+    ],
+    [
+      "F",
+      0.9991746599521092
+    ],
+    [
+      "4",
+      0.996056083612029
+    ]
+  ],
+  "training_samples": 115
+}

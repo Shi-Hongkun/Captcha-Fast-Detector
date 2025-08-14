@@ -1,0 +1,31 @@
+{
+  "fold_idx": 16,
+  "captcha_name": "output16.txt",
+  "ground_truth": "1D2KB",
+  "prediction": "NR8FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "N",
+      0.9596420728240146
+    ],
+    [
+      "R",
+      0.988733149185285
+    ],
+    [
+      "8",
+      0.9986494398202702
+    ],
+    [
+      "F",
+      0.9985480447938031
+    ],
+    [
+      "E",
+      0.9917301948680073
+    ]
+  ],
+  "training_samples": 115
+}

@@ -1,0 +1,31 @@
+{
+  "fold_idx": 21,
+  "captcha_name": "output22.txt",
+  "ground_truth": "HCE91",
+  "prediction": "P98FE",
+  "correct": false,
+  "char_accuracy": 0.0,
+  "char_predictions": [
+    [
+      "P",
+      0.9661528606720319
+    ],
+    [
+      "9",
+      0.9906572954320368
+    ],
+    [
+      "8",
+      0.9982164138297165
+    ],
+    [
+      "F",
+      0.9983869909166498
+    ],
+    [
+      "E",
+      0.99303522583372
+    ]
+  ],
+  "training_samples": 115
+}
