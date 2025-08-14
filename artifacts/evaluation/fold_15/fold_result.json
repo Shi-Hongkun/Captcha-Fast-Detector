@@ -2,29 +2,29 @@
   "fold_idx": 15,
   "captcha_name": "output15.txt",
   "ground_truth": "XKMS2",
-  "prediction": "PR8KE",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "XKMS2",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "P",
-      0.9415056316617143
-    ],
-    [
-      "R",
-      0.9893213710488549
-    ],
-    [
-      "8",
-      0.9965100046395351
+      "X",
+      0.9537768983565436
     ],
     [
       "K",
-      0.9987422677863513
+      0.9711706056047544
     ],
     [
-      "E",
-      0.9912052420566543
+      "M",
+      0.9968557780935536
+    ],
+    [
+      "S",
+      0.9904775240653872
+    ],
+    [
+      "2",
+      0.9658082416433702
     ]
   ],
   "training_samples": 115

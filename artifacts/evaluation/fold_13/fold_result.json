@@ -2,29 +2,29 @@
   "fold_idx": 13,
   "captcha_name": "output13.txt",
   "ground_truth": "VWZDO",
-  "prediction": "PR8FE",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "VWZDO",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "P",
-      0.9580058576776057
+      "V",
+      0.9783799313566878
     ],
     [
-      "R",
-      0.988893817771442
+      "W",
+      0.9897416877912135
     ],
     [
-      "8",
-      0.9979492004124162
+      "Z",
+      0.9659153703301875
     ],
     [
-      "F",
-      0.9989897397711418
+      "D",
+      0.9934443893695561
     ],
     [
-      "E",
-      0.9921397412046691
+      "O",
+      0.9769692617196287
     ]
   ],
   "training_samples": 115

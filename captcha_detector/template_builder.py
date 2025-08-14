@@ -21,15 +21,15 @@ class TemplateBuilder:
     Templates are saved in txt format with metadata for tracking.
     """
     
-    def __init__(self, char_dataset_dir: str | Path, target_size: Tuple[int, int] = (6, 12)):
+    def __init__(self, char_dataset_dir: str | Path, target_size: Tuple[int, int] = (12, 9)):
         """Initialize the template builder.
         
         Args:
             char_dataset_dir: Directory containing organized character dataset
-            target_size: Target size (width, height) - consistent with txt format
+            target_size: Target size (height, width) - consistent with txt format
         """
         self.char_dataset_dir = Path(char_dataset_dir)
-        self.target_size = target_size  # (width, height)
+        self.target_size = target_size  # (height, width)
         
         if not self.char_dataset_dir.exists():
             raise ValueError(f"Character dataset directory does not exist: {char_dataset_dir}")
@@ -48,7 +48,7 @@ class TemplateBuilder:
         
         templates = {}
         metadata = {
-            "target_size": list(self.target_size),
+            "target_size": list(self.target_size),  # (height, width)
             "char_count": len(expected_labels),
             "samples_per_char": {},
             "created_at": None
@@ -156,9 +156,9 @@ class TemplateBuilder:
         else:
             gray_array = char_array
         
-        # Note: char_array is (height, width) from reshape(height, width)
+        # Note: char_array is (height, width)
         current_height, current_width = gray_array.shape
-        target_width, target_height = self.target_size  # (width, height)
+        target_height, target_width = self.target_size  # (height, width)
         
         # Calculate background color (use the most common pixel value)
         pixel_counts = Counter(gray_array.flatten())

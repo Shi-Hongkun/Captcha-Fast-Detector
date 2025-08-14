@@ -2,29 +2,29 @@
   "fold_idx": 14,
   "captcha_name": "output14.txt",
   "ground_truth": "WGST7",
-  "prediction": "PRTFE",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "WGST7",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "P",
-      0.9581460912692001
+      "W",
+      0.9881498658032994
     ],
     [
-      "R",
-      0.9884653958753654
+      "G",
+      0.992416717108918
+    ],
+    [
+      "S",
+      0.9867564053626002
     ],
     [
       "T",
-      0.9979102073885934
+      0.9786941129328249
     ],
     [
-      "F",
-      0.9979025184281648
-    ],
-    [
-      "E",
-      0.9917021622443538
+      "7",
+      0.9565326843456713
     ]
   ],
   "training_samples": 115

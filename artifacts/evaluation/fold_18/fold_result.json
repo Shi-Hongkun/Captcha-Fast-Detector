@@ -2,29 +2,29 @@
   "fold_idx": 18,
   "captcha_name": "output18.txt",
   "ground_truth": "OAH0V",
-  "prediction": "P08FE",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "OAH0V",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "P",
-      0.9839922605384421
+      "O",
+      0.9869456182585212
+    ],
+    [
+      "A",
+      0.9842331100728925
+    ],
+    [
+      "H",
+      0.9905137285819939
     ],
     [
       "0",
-      0.9953843442462982
+      0.9701875483786033
     ],
     [
-      "8",
-      0.9973367267923972
-    ],
-    [
-      "F",
-      0.9975318075563525
-    ],
-    [
-      "E",
-      0.992295044103951
+      "V",
+      0.9810383720294488
     ]
   ],
   "training_samples": 115

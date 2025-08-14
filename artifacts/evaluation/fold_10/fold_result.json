@@ -2,29 +2,29 @@
   "fold_idx": 10,
   "captcha_name": "output10.txt",
   "ground_truth": "GZMBA",
-  "prediction": "PG8FE",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "GZMBA",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "P",
-      0.9600965133428307
-    ],
-    [
       "G",
-      0.9962950735325655
+      0.9869657545774788
     ],
     [
-      "8",
-      0.9965216114682741
+      "Z",
+      0.9782017126764752
     ],
     [
-      "F",
-      0.9990365905871202
+      "M",
+      0.9969082815920949
     ],
     [
-      "E",
-      0.991165496697038
+      "B",
+      0.9901502235897565
+    ],
+    [
+      "A",
+      0.9738639933341534
     ]
   ],
   "training_samples": 115

@@ -96,7 +96,7 @@ class CharacterRecognizer:
         array = np.array(pixels, dtype=np.uint8)
         return array.reshape(height, width)
     
-    def _canonicalize_character(self, char_array: np.ndarray, target_size: Tuple[int, int] = (6, 12)) -> np.ndarray:
+    def _canonicalize_character(self, char_array: np.ndarray, target_size: Tuple[int, int] = (12, 9)) -> np.ndarray:
         """Canonicalize character array to target size.
         
         Args:
@@ -113,7 +113,7 @@ class CharacterRecognizer:
             gray_array = char_array
         
         height, width = gray_array.shape
-        target_width, target_height = target_size
+        target_height, target_width = target_size
         
         # Handle width padding/truncation
         if width < target_width:
@@ -158,7 +158,8 @@ class CharacterRecognizer:
         """
         # Ensure same size
         if query.shape != template.shape:
-            query = self._canonicalize_character(query, template.shape[::-1])
+            # Canonicalize to template's (height, width)
+            query = self._canonicalize_character(query, template.shape)
         
         # Convert to float and normalize
         query_norm = query.astype(np.float64) / 255.0
@@ -193,7 +194,7 @@ class CharacterRecognizer:
         """
         # Ensure same size
         if query.shape != template.shape:
-            query = self._canonicalize_character(query, template.shape[::-1])
+            query = self._canonicalize_character(query, template.shape)
         
         # Convert to float and normalize
         query_norm = query.astype(np.float64) / 255.0
@@ -216,7 +217,7 @@ class CharacterRecognizer:
             raise ValueError("No templates loaded")
         
         # Canonicalize input character
-        canonicalized = self._canonicalize_character(char_array, (6, 12))
+        canonicalized = self._canonicalize_character(char_array, (12, 9))
         
         # Compute scores for all templates
         ncc_scores = {}

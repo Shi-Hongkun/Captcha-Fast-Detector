@@ -2,29 +2,29 @@
   "fold_idx": 9,
   "captcha_name": "output09.txt",
   "ground_truth": "ZGJS3",
-  "prediction": "NR83E",
-  "correct": false,
-  "char_accuracy": 0.0,
+  "prediction": "ZGJS3",
+  "correct": true,
+  "char_accuracy": 1.0,
   "char_predictions": [
     [
-      "N",
-      0.9660454605786405
+      "Z",
+      0.9885945276426821
     ],
     [
-      "R",
-      0.989902829880437
+      "G",
+      0.9936503620276597
     ],
     [
-      "8",
-      0.9976204823315191
+      "J",
+      0.9523308806968116
+    ],
+    [
+      "S",
+      0.9909062612748105
     ],
     [
       "3",
-      0.9984436416383141
-    ],
-    [
-      "E",
-      0.991935525896217
+      0.9527201672132295
     ]
   ],
   "training_samples": 115

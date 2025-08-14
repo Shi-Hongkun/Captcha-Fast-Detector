@@ -255,7 +255,7 @@ class EvaluationFramework:
             # Canonicalize all characters to same size
             canonicalized = []
             for char_array in char_arrays:
-                canonicalized.append(self._canonicalize_character(char_array, (6, 12)))
+                canonicalized.append(self._canonicalize_character(char_array, (12, 9)))
             
             # Average the canonicalized characters
             template = np.stack(canonicalized, axis=0).mean(axis=0).astype(np.uint8)
@@ -282,7 +282,7 @@ class EvaluationFramework:
             gray_array = char_array
         
         height, width = gray_array.shape
-        target_width, target_height = target_size
+        target_height, target_width = target_size
         
         # Handle width padding/truncation
         if width < target_width:
